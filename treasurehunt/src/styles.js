@@ -14,7 +14,18 @@ export const theme = {
   pink: "#eea9b8",
   red: "#FF0000",
 };
+
+//Buttons
 export const SignInButtonStyled = styled.button`
+  font-size: 1em;
+  padding: 0.25em 1em;
+  margin-left: 0.5em;
+  border-radius: 3px;
+  background-color: ${(props) => props.theme.mainColor};
+  color: ${(props) => props.theme.backgroundColor};
+`;
+
+export const SignUpButtonStyled = styled.button`
   font-size: 1em;
   padding: 0.25em 1em;
   margin-left: 0.5em;
@@ -47,13 +58,4 @@ export const NavItem = styled(NavLink)`
   &.active {
     background-color: pink;
   }
-`;
-
-export const SignUpButtonStyled = styled.button`
-  font-size: 1em;
-  padding: 0.25em 1em;
-  margin-left: 0.5em;
-  border-radius: 3px;
-  background-color: ${(props) => props.theme.mainColor};
-  color: ${(props) => props.theme.backgroundColor};
 `;

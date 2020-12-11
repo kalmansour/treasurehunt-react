@@ -1,6 +1,10 @@
 import { useState } from "react";
 import authStore from "../stores/authStore";
-// import SignInButton from "./SignInButton";
+import { observer } from "mobx-react";
+import { Redirect } from "react-router-dom";
+
+//Components
+import SignInButton from "./SignInButton";
 
 const SignInDetail = () => {
   const [user, setUser] = useState({
@@ -17,9 +21,11 @@ const SignInDetail = () => {
   };
   console.log(SignInDetail);
 
+  if (authStore.user) return <Redirect to="/" />;
+
   return (
     <div>
-      <h3>Signin</h3>
+      <h3>Signin Page</h3>
       <form onSubmit={handleSubmit}>
         <div className="form-group row">
           <div>
@@ -39,9 +45,9 @@ const SignInDetail = () => {
               className="form-control"
               onChange={handleChange}
             />
-            <button className="btn float-right" type="submit">
+            <SignInButton className="btn float-right" type="submit">
               Sign in
-            </button>
+            </SignInButton>
           </div>
         </div>
       </form>

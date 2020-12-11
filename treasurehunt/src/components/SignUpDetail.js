@@ -1,6 +1,9 @@
 import { useState } from "react";
 import authStore from "../stores/authStore";
-// import SignUpButton from "./SignUpButton";
+import { observer } from "mobx-react";
+
+//Components
+import SignUpButton from "./SignUpButton";
 
 const SignUpDetail = () => {
   const [user, setUser] = useState({
@@ -18,7 +21,7 @@ const SignUpDetail = () => {
 
   return (
     <div>
-      <h3>SignUp</h3>
+      <h3>SignUp Page</h3>
       <form onSubmit={handleSubmit}>
         <div className="form-group row">
           <div>
@@ -38,9 +41,9 @@ const SignUpDetail = () => {
               className="form-control"
               onChange={handleChange}
             />
-            <button className="btn float-right" type="submit">
+            <SignUpButton className="btn float-right" type="submit">
               SignUp
-            </button>
+            </SignUpButton>
           </div>
         </div>
       </form>
