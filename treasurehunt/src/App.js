@@ -1,8 +1,8 @@
 import { observer } from "mobx-react";
-// import SignUpDetail from "./components/SignUpDetail";
-// import SignInDetail from "./components/SignInDetail";
 import Navbar from "./components/NavBar";
 import Routes from "./components/Routes";
+// import ThingList from "./components/ThingList";
+// import TreasureList from "./components/TreasureList";
 
 // Styles
 import { GlobalStyle, theme } from "./styles";
@@ -13,9 +13,6 @@ function App() {
     <ThemeProvider theme={theme}>
       <GlobalStyle />
       <Navbar />
-      {/* <h1>yooooo whatsup</h1> */}
-      {/* <SignUpDetail />
-      <SignInDetail /> */}
       <Routes />
     </ThemeProvider>
   );

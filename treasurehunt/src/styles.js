@@ -15,6 +15,23 @@ export const theme = {
   red: "#FF0000",
 };
 
+//Thing Styling
+const ThingItemStyled = styled.div`
+  p {
+    text-align: centerl;
+  }
+  h2 {
+    text-align: center;
+  }
+`;
+
+export const ThingListWrapper = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 //Buttons
 export const SignInButtonStyled = styled.button`
   font-size: 1em;
@@ -59,3 +76,5 @@ export const NavItem = styled(NavLink)`
     background-color: pink;
   }
 `;
+
+export default ThingItemStyled;
