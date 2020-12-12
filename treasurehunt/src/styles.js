@@ -11,14 +11,72 @@ export const GlobalStyle = createGlobalStyle`
 export const theme = {
   mainColor: "#FF0000", // main font color
   backgroundColor: "white", // main background color
-  pink: "#eea9b8",
-  red: "#FF0000",
+  gold: "gold",
+  navy: "navy",
+  blue: "blue",
 };
+
+//Home Styling
+export const RandomButton = styled.button`
+  font-size: 1em;
+  padding: 0.25em 1em;
+  margin-left: 0.5em;
+  border-radius: 3px;
+  background-color: ${({ theme }) => theme.mainColor};
+  color: ${({ theme }) => theme.backgroundColor};
+`;
+
+export const Title = styled.h1`
+  text-align: center;
+  /* background-color: #f2e596; */
+  font-family: Arial, Helvetica, sans-serif;
+`;
+
+export const TreasureHeader = styled.h2`
+  text-align: center;
+  color: ${({ theme }) => theme.gold};
+  font-family: Arial, Helvetica, sans-serif;
+`;
+
+export const FreeJokeHeader = styled.h2`
+  text-align: center;
+  color: ${({ theme }) => theme.navy};
+  font-family: Arial, Helvetica, sans-serif;
+`;
+
+export const HomeStyling = styled.div`
+  margin: 50px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+`;
+
+export const FreeJokeImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  /* padding-bottom: 10px; */
+  border: thick solid;
+  border-color: ${({ theme }) => theme.navy};
+`;
+
+export const HomeGif = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  /* padding-bottom: 10px; */
+  border: thick solid;
+  border-color: ${({ theme }) => theme.gold};
+`;
 
 //Thing Styling
 const ThingItemStyled = styled.div`
+  color: ${({ theme }) => theme.mainColor};
   p {
-    text-align: centerl;
+    text-align: center;
   }
   h2 {
     text-align: center;
@@ -38,8 +96,8 @@ export const SignInButtonStyled = styled.button`
   padding: 0.25em 1em;
   margin-left: 0.5em;
   border-radius: 3px;
-  background-color: ${(props) => props.theme.mainColor};
-  color: ${(props) => props.theme.backgroundColor};
+  background-color: ${({ theme }) => theme.mainColor};
+  color: ${({ theme }) => theme.backgroundColor};
 `;
 
 export const SignUpButtonStyled = styled.button`
@@ -47,8 +105,8 @@ export const SignUpButtonStyled = styled.button`
   padding: 0.25em 1em;
   margin-left: 0.5em;
   border-radius: 3px;
-  background-color: ${(props) => props.theme.mainColor};
-  color: ${(props) => props.theme.backgroundColor};
+  background-color: ${({ theme }) => theme.mainColor};
+  color: ${({ theme }) => theme.backgroundColor};
 `;
 
 //NavBar Styles
