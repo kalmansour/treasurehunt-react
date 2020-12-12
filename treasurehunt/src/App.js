@@ -1,8 +1,6 @@
 import { observer } from "mobx-react";
 import Navbar from "./components/NavBar";
 import Routes from "./components/Routes";
-// import ThingList from "./components/ThingList";
-// import TreasureList from "./components/TreasureList";
 
 // Styles
 import { GlobalStyle, theme } from "./styles";

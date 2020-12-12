@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import authStore from "../stores/authStore";
+// import SignUpHook from "./SignUpHook";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Link to="/things/treasure">
         {authStore.user ? <button>Treasure</button> : null}
       </Link>
+      {/* <SignUpHook /> */}
     </div>
   );
 };

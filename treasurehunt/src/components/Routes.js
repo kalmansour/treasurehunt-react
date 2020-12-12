@@ -1,11 +1,13 @@
 import { Route, Switch } from "react-router";
 
 //Components
-import SignUpDetail from "./SignUpDetail";
-import SignInDetail from "./SignInDetail";
+import SignUpHook from "./SignUpHook";
+import SignInHook from "./SignInHook";
 import ThingList from "./ThingList";
 import TreasureList from "./TreasureList";
 import Home from "./Home";
+// import SignUpDetail from "./SignUpDetail";
+// import SignInDetail from "./SignInDetail";
 
 const Routes = () => {
   return (
@@ -17,10 +19,10 @@ const Routes = () => {
         <ThingList />
       </Route>
       <Route path="/signup">
-        <SignUpDetail />
+        <SignUpHook />
       </Route>
-      <Route path="/login">
-        <SignInDetail />
+      <Route path="/signin">
+        <SignInHook />
       </Route>
       <Route path="/">
         <Home />

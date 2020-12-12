@@ -1,6 +1,8 @@
 import { useState } from "react";
-import authStore from "../stores/authStore";
 import { observer } from "mobx-react";
+
+//Stores
+import authStore from "../stores/authStore";
 
 //Components
 import SignUpButton from "./SignUpButton";

@@ -40,7 +40,7 @@ const NavBar = () => {
               <li className="nav-item active">
                 <NavItem
                   className="nav-item"
-                  to="/login"
+                  to="/signin"
                   style={{ padding: 10 }}
                 >
                   <SigninButton />
